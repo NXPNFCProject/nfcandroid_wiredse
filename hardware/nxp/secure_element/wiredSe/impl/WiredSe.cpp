@@ -514,6 +514,7 @@ WiredSe::seHalDeInit() {
   if (wiredSeStatus < 0) {
     sestatus = SecureElementStatus::FAILED;
   } else {
+    sestatus = SecureElementStatus::SUCCESS;
     resetWiredSeContext();
   }
   return sestatus;
